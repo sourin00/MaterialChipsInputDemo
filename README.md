@@ -7,7 +7,7 @@ Use this if you want to implement material chips without any 3rd party library d
 
 ### Prerequisites
 
-Must have SDK 28 included in dependency either support library or androidX and material
+Must have SDK 28 included in dependency either support library or androidX and material. 
 I have used androidX and material
 
 ```
@@ -87,9 +87,12 @@ override fun afterTextChanged(s: Editable?) {
                     val chip = Chip(this@MainActivity)
                     chip.text = trimmed.substring(0, trimmed.length - 1)
                     chip.isCloseIconVisible = true
+                    
+                    //Callback fired when chip close icon is clicked 
                     chip.setOnCloseIconClickListener {
                         chipGroup.removeView(chip)
                     }
+                    
                     chipGroup.addView(chip)
                     s?.clear()
                 }
