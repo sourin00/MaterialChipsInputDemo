@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MaterialChipApplication</string>
+    <string name="enter_chip_txt">Enter Text</string>
+    <string name="chip_help_txt">Use commas to generate chips</string>
+</resources>
