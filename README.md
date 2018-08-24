@@ -78,7 +78,7 @@ Layout code
     
 ```
 
-TextWatcher for adding chips on eneter comma
+TextWatcher for adding chips on enter comma
 
 ```
 override fun afterTextChanged(s: Editable?) {
